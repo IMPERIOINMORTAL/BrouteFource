@@ -1,3 +1,3 @@
-#!/usr/nin/python
+#!/usr/bin/python
 import os
 import 
