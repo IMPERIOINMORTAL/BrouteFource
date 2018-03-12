@@ -12,6 +12,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from mainLib import *
 
+parser = argparser.ArgumentParser(description='Brute Force for social Network')
+required.add_argument('-t','--target',dest='Usernames.txt')
+required.add_argument('-w','--wordlist',dest='wordlist.txt')
+required.add_argument('-d','--delay',dest='wait time')
+
+args= parser.parse_args()
+
+
 profile = webdriver.FirefoxProfile()
 profile.set_preference("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36")
 driver = "reserved"
